@@ -8,13 +8,12 @@ github_username: sargeschultz11
 
 # Build settings
 markdown: kramdown
-remote_theme: pages-themes/time-machine@v0.2.0 # You can change this to another GitHub Pages supported theme
+theme: minima # You can change this to another GitHub Pages supported theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-remote-theme
 
 # Pagination settings
 paginate: 10
