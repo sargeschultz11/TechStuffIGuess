@@ -2,7 +2,7 @@
 title: TechStuffIGuess
 description: >-
   A place where I write about Intune, Microsoft 365, and other IT stuff I guess.
-baseurl: "/techstuffiguess" # the subpath of your site, e.g. /blog
+baseurl: "/TechStuffIGuess" # the subpath of your site, e.g. /blog
 url: "https://sargeschultz11.github.io" # the base hostname & protocol
 github_username: sargeschultz11
 
