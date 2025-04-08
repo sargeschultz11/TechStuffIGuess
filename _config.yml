@@ -8,7 +8,7 @@ github_username: sargeschultz11
 
 # Build settings
 markdown: kramdown
-theme: minima # You can change this to another GitHub Pages supported theme
+theme: time-machine@v0.2.0 # You can change this to another GitHub Pages supported theme
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
