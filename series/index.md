@@ -10,7 +10,7 @@ Browse collections of related articles organized by topic.
 
 ## Available Series
 
-### [Device Management](/series/device-management.md)
+### [Device Management](/series/device-management)
 A comprehensive look at device management with Microsoft Intune, from enrollment to advanced configuration.
 
 {% comment %}
