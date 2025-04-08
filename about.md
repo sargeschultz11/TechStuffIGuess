@@ -37,8 +37,8 @@ When I'm not wrestling with tenant configurations or debugging enrollment errors
 
 Feel free to reach out with questions, suggestions, or to point out when I'm completely wrong:
 
-- GitHub: [Your GitHub username]
-- Twitter: [Your Twitter handle if you want to share]
-- LinkedIn: [Your LinkedIn profile if you want to share]
+- GitHub: sargeschultz11
+- Reddit: u/TheMangyMoose82
+- Discord: sargeschultz11
 
 Or just open an issue on this site's repository if you spot an error or have a suggestion for improvement.
