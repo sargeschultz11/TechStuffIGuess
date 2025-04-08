@@ -1,2 +1,2 @@
-# TechStuffIGuess
+# techstuffiguess.github.io
 ¯\_(ツ)_/¯

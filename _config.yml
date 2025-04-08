@@ -1,0 +1,64 @@
+# Site settings for TechStuffIGuess
+title: TechStuffIGuess
+description: >-
+  A place where I write about Intune, Microsoft 365, and other IT stuff I guess.
+baseurl: "/techstuffiguess" # the subpath of your site, e.g. /blog
+url: "https://sargeschultz11.github.io" # the base hostname & protocol
+github_username: sargeschultz11
+
+# Build settings
+markdown: kramdown
+theme: minima # You can change this to another GitHub Pages supported theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Pagination settings
+paginate: 10
+paginate_path: "/page:num/"
+
+# Collections
+collections:
+  series:
+    output: true
+    permalink: /:collection/:name/
+
+# Default front matter settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      author: "Ryan Schultz"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "series"
+    values:
+      layout: "series"
+
+# Navigation
+header_pages:
+  - about.md
+  - categories/intune.md
+  - categories/microsoft365.md
+  - categories/general-it.md
+  - series.md
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .idea/
+  - .vscode/
+  - README.md

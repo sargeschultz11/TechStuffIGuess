@@ -1,0 +1,34 @@
+<aside class="sidebar">
+    <section class="sidebar-section">
+      <h3>Categories</h3>
+      <ul class="category-list">
+        <li><a href="{{ '/categories/intune/' | relative_url }}">Intune</a></li>
+        <li><a href="{{ '/categories/microsoft365/' | relative_url }}">Microsoft 365</a></li>
+        <li><a href="{{ '/categories/general-it/' | relative_url }}">General IT</a></li>
+        <li><a href="{{ '/categories/' | relative_url }}">View All Categories</a></li>
+      </ul>
+    </section>
+    
+    <section class="sidebar-section">
+      <h3>Recent Posts</h3>
+      <ul class="recent-posts">
+        {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    
+    <section class="sidebar-section">
+      <h3>Series</h3>
+      <ul class="series-list">
+        {% assign series_posts = site.posts | where: "series", "device-management" %}
+        {% if series_posts.size > 0 %}
+        <li><a href="{{ '/series/device-management/' | relative_url }}">Device Management</a></li>
+        {% endif %}
+        <li><a href="{{ '/series/' | relative_url }}">View All Series</a></li>
+      </ul>
+    </section>
+  </aside>
