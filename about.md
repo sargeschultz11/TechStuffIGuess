@@ -6,7 +6,7 @@ permalink: /about/
 
 # About TechStuffIGuess
 
-Hey, I'm [YOUR NAME], the person behind this collection of tech articles. I work with Microsoft 365, Intune, and various IT systems on a daily basis, and I've decided to document my findings, solutions, and occasional frustrations here.
+Hey, I'm Ryan, the person behind this collection of tech articles. I work with Microsoft 365, Intune, and various IT systems on a daily basis, and I've decided to document my findings, solutions, and occasional frustrations here.
 
 ## Why "TechStuffIGuess"?
 
@@ -16,7 +16,15 @@ This site is my attempt to demystify some of this technology without taking it (
 
 ## My Background
 
-[Include a brief description of your experience and expertise here]
+I've spent what feels like several lifetimes clicking "Next" in Windows installation wizards and explaining that "the cloud" isn't actually made of water vapor.
+
+My professional journey began when I was voluntold to "just check why the printer isn't working" and somehow ended up with an entire IT career. I've survived countless Microsoft product rebrands, witnessed the evolution of Intune from "that thing nobody uses" to "that thing everybody complains about using," and have developed an uncanny ability to find the one setting that's buried 17 clicks deep in the admin center.
+
+My certifications include coffee stain removal from keyboards, translating error codes that are just random hexadecimal numbers, and maintaining a straight face when users tell me they've "tried everything" but haven't attempted restarting their device.
+
+When I'm not wrestling with tenant configurations or debugging enrollment errors, you'll find me explaining to friends and family that no, I cannot hack their ex's Facebook account, and yes, turning it off and on again really does fix most problems.
+
+
 
 ## What To Expect
 
