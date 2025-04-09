@@ -71,9 +71,17 @@ header {
   border-bottom: 1px solid #FFBF00 !important;
 }
 
-/* List item arrows */
+/* Fallout-style list markers */
+ul li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 20px;
+}
+
 ul li:before {
   content: ">> ";
+  position: absolute;
+  left: 0;
   color: #FFBF00 !important;
 }
 
