@@ -3,7 +3,30 @@
 
 @import "{{ site.theme }}";
 
-/* Your custom styles below */
-// body {
-//   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-// }
+/* Custom navigation styling */
+.nav-links {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-links .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Make text links more visible */
+a {
+  color: #b5e853;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Make headers stand out more */
+h1, h2, h3, h4, h5, h6 {
+  color: #b5e853;
+  margin-top: 30px;
+}
