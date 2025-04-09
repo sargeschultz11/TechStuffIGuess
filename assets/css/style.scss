@@ -12,34 +12,86 @@ body {
 
 /* Header colors */
 h1, h2, h3, h4, h5, h6 {
-  color: #FFBF00; /* Brighter amber for headers */
+  font-weight: normal;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #FFBF00 !important;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(255, 191, 0, 0.1),
+               0 0 10px rgba(255, 191, 0, 0.1);
 }
 
 /* Link colors */
 a {
   color: #FFD700; /* Gold color for links */
-  text-decoration: underline;
+  text-shadow: 0 0 5px rgba(255, 191, 0, 0.5);
 }
 
 a:hover {
   color: #FFA500; /* Orange on hover */
-  text-decoration: none;
+}
+
+/* Override bullet points with custom amber bullet */
+ul li {
+  list-style-image: none;
+  list-style-type: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li:before {
+  content: ">>";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #FFBF00;
+}
+
+/* Fix the header line */
+header {
+  border-bottom: 1px dashed #FFBF00 !important;
+}
+
+/* Fix all header text */
+header h1 {
+  color: #FFBF00 !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(255, 191, 0, 0.1),
+               0 0 10px rgba(255, 191, 0, 0.1);
+}
+
+header h1:before {
+  color: #FFBF00 !important;
 }
 
 /* Code block colors */
-code {
-  color: #FFB641; /* Amber code text */
-  background: #272822; /* Dark background */
+pre {
+  color: #FFB641 !important;
 }
 
-/* Navigation button colors */
+code.highlighter-rouge {
+  color: #FFB641 !important;
+}
+
+/* Button styles */
 .btn {
-  color: #000000; /* Black text */
-  background: #DEAF34; /* Amber background */
+  color: #000000;
+  background: -webkit-linear-gradient(top, rgba(255, 191, 0, 0.3), rgba(255, 191, 0, 0.3) 50%, rgba(222, 175, 52, 0.3) 50%, rgba(222, 175, 52, 0.3));
+  border: 2px solid rgba(222, 175, 52, 0.7);
 }
 
 .btn:hover {
-  background: #FFD700; /* Brighter on hover */
+  background: -webkit-linear-gradient(top, rgba(255, 191, 0, 0.6), rgba(255, 191, 0, 0.6) 50%, rgba(222, 175, 52, 0.8) 50%, rgba(222, 175, 52, 0.8));
+}
+
+/* Fix table elements */
+th {
+  border-bottom: 1px dashed #FFBF00;
+}
+
+hr {
+  border-bottom: 1px dashed #FFBF00;
+  color: #FFBF00;
 }
 
 /* Nav-links styling */
@@ -52,80 +104,4 @@ code {
 .nav-links .btn {
   margin-right: 10px;
   margin-bottom: 10px;
-}
-
-/* Terminal-like effect */
-#main_content {
-  text-shadow: 0 0 5px rgba(255, 191, 0, 0.3);
-}
-
-/* Fix the remaining green elements */
-
-/* Main site header/title */
-#a-title h1 {
-  color: #FFBF00 !important;
-}
-
-/* Horizontal separator line */
-header {
-  border-bottom: 1px solid #FFBF00 !important;
-}
-
-/* Reset and override list styling completely */
-ul {
-  list-style-type: none !important;
-}
-
-/* Remove the theme's default list styling */
-ul li:before {
-  content: none !important;
-}
-
-/* Add our custom Fallout-style markers */
-ul li {
-  position: relative;
-  padding-left: 25px;
-}
-
-ul li:after {
-  content: ">> ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #FFBF00 !important;
-}
-
-/* Fix any other green elements */
-.highlight {
-  color: #FFBF00 !important;
-}
-
-/* Override any other theme-specific green colors */
-.main-content h1, .main-content h2, .main-content h3, 
-.main-content h4, .main-content h5, .main-content h6 {
-  color: #FFBF00 !important;
-}
-
-/* Ensure header text is amber */
-header h1, header h2 {
-  color: #FFBF00 !important;
-}
-
-/* Optional: Add a subtle scan line effect */
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.1) 50%,
-    transparent 50%
-  );
-  background-size: 100% 4px;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.1;
 }
