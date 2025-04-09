@@ -3,7 +3,46 @@
 
 @import "{{ site.theme }}";
 
-/* Custom navigation styling */
+/* Fallout New Vegas Theme */
+
+/* Main text color - amber */
+body {
+  color: #DEAF34; /* FNV amber */
+}
+
+/* Header colors */
+h1, h2, h3, h4, h5, h6 {
+  color: #FFBF00; /* Brighter amber for headers */
+}
+
+/* Link colors */
+a {
+  color: #FFD700; /* Gold color for links */
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #FFA500; /* Orange on hover */
+  text-decoration: none;
+}
+
+/* Code block colors */
+code {
+  color: #FFB641; /* Amber code text */
+  background: #272822; /* Dark background */
+}
+
+/* Navigation button colors */
+.btn {
+  color: #000000; /* Black text */
+  background: #DEAF34; /* Amber background */
+}
+
+.btn:hover {
+  background: #FFD700; /* Brighter on hover */
+}
+
+/* Nav-links styling */
 .nav-links {
   margin-top: 20px;
   display: flex;
@@ -15,18 +54,26 @@
   margin-bottom: 10px;
 }
 
-/* Make text links more visible */
-a {
-  color: #b5e853;
-  text-decoration: underline;
+/* Terminal-like effect */
+#main_content {
+  text-shadow: 0 0 5px rgba(255, 191, 0, 0.3);
 }
 
-a:hover {
-  text-decoration: none;
-}
-
-/* Make headers stand out more */
-h1, h2, h3, h4, h5, h6 {
-  color: #b5e853;
-  margin-top: 30px;
+/* Optional: Add a subtle scan line effect */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 50%,
+    transparent 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.1;
 }
