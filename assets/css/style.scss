@@ -59,6 +59,40 @@ code {
   text-shadow: 0 0 5px rgba(255, 191, 0, 0.3);
 }
 
+/* Fix the remaining green elements */
+
+/* Main site header/title */
+#a-title h1 {
+  color: #FFBF00 !important;
+}
+
+/* Horizontal separator line */
+header {
+  border-bottom: 1px solid #FFBF00 !important;
+}
+
+/* List item arrows */
+ul li:before {
+  content: ">> ";
+  color: #FFBF00 !important;
+}
+
+/* Fix any other green elements */
+.highlight {
+  color: #FFBF00 !important;
+}
+
+/* Override any other theme-specific green colors */
+.main-content h1, .main-content h2, .main-content h3, 
+.main-content h4, .main-content h5, .main-content h6 {
+  color: #FFBF00 !important;
+}
+
+/* Ensure header text is amber */
+header h1, header h2 {
+  color: #FFBF00 !important;
+}
+
 /* Optional: Add a subtle scan line effect */
 body::after {
   content: "";
