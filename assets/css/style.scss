@@ -71,17 +71,27 @@ header {
   border-bottom: 1px solid #FFBF00 !important;
 }
 
-/* Fallout-style list markers */
-ul li {
-  list-style-type: none;
-  position: relative;
-  padding-left: 20px;
+/* Reset and override list styling completely */
+ul {
+  list-style-type: none !important;
 }
 
+/* Remove the theme's default list styling */
 ul li:before {
-  content: ">> >>";
+  content: none !important;
+}
+
+/* Add our custom Fallout-style markers */
+ul li {
+  position: relative;
+  padding-left: 25px;
+}
+
+ul li:after {
+  content: ">> ";
   position: absolute;
   left: 0;
+  top: 0;
   color: #FFBF00 !important;
 }
 
