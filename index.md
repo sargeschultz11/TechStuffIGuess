@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: TechStuffIGuess
 list_title: Recent Articles
 ---
