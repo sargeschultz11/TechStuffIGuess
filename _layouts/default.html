@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.scss?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
 
 {% seo %}
@@ -25,15 +25,6 @@
           {% endif %}
           <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
-        
-        <!-- Custom navigation -->
-        <nav class="site-nav">
-          <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
-          <a class="page-link" href="{{ '/categories/intune/' | relative_url }}">Intune</a>
-          <a class="page-link" href="{{ '/categories/microsoft365/' | relative_url }}">Microsoft 365</a>
-          <a class="page-link" href="{{ '/categories/general-it/' | relative_url }}">General IT</a>
-          <a class="page-link" href="{{ '/series/' | relative_url }}">Series</a>
-        </nav>
       </div>
     </header>
 
@@ -41,11 +32,6 @@
       <section id="main_content">
         {{ content }}
       </section>
-      
-      <!-- Custom footer -->
-      <footer class="site-footer">
-        <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved. ¯\_(ツ)_/¯</p>
-      </footer>
     </div>
   </body>
 </html>
